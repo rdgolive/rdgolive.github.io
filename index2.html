@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Страница КубГУ</title>
+
+    <link rel="stylesheet" href="StyleSheet3.css">
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-inner">
+
+            <div class="logo">
+                <img src="https://expo-russia-africa.id.page/resources/000/000/000/001/454/1454293_240x240.png"
+                     alt="Логотип КубГУ"
+                     width="35"
+                     height="35">
+
+            </div>
+
+            <div class="site-title">
+                <h1>Страница КубГУ</h1>
+            </div>
+
+            <nav class="top-menu">
+                <a href="#links">Ссылки</a>
+                <a href="#table">Таблица</a>
+                <a href="#form">Форма</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Основная часть -->
+    <main class="container">
+
+
+        <!-- СПИСОК ГИПЕРССЫЛОК -->
+        <section class="card" id="links">
+
+            <h2>Список гиперссылок</h2>
+
+            <ul>
+
+                <!-- 1 -->
+                <li>
+                    <a href="http://kubsu.ru">
+                        Абсолютная на главную kubsu.ru
+                    </a>
+                </li>
+
+                <!-- 2 -->
+                <li>
+                    <a href="https://kubsu.ru">
+                        Абсолютная на главную в протоколе https
+                    </a>
+                </li>
+
+                <!-- 3. Логотип КубГУ -->
+                <li>
+                    <a href="https://kubsu.ru">
+                        <img src="https://gelendzhik.academica.ru/images/colleges/539/1690978231_64ca47b73389b.webp"
+                             alt="Логотип КубГУ"
+                             width="120">
+                    </a>
+                </li>
+
+                <!-- 4 -->
+                <li>
+                    <a href="index2.html">
+                        Сокращенная на внутреннюю страницу
+                    </a>
+                </li>
+
+                <!-- 5 -->
+                <li>
+                    <a href="/">
+                        Сокращенная на главную
+                    </a>
+                </li>
+
+                <!-- 6 -->
+                <li>
+                    <a href="#table">
+                        Ссылка на фрагмент текущей страницы
+                    </a>
+                </li>
+
+                <!-- 7 -->
+                <li>
+                    <a href="index2.html?name=Roman&group=web&year=2026">
+                        Ссылка с тремя параметрами в URL
+                    </a>
+                </li>
+
+                <!-- 8 -->
+                <li>
+                    <a href="index2.html?id=12345">
+                        Ссылка с параметром id в URL
+                    </a>
+                </li>
+
+                <!-- 9 -->
+                <li>
+                    <a href="table/index.html">
+                        Относительная на страницу в текущем каталоге
+                    </a>
+                </li>
+
+                <!-- 10 -->
+                <li>
+                    <a href="about/index.html">
+                        Относительная на страницу в каталоге about
+                    </a>
+                </li>
+
+                <!-- 11 -->
+                <li>
+                    <a href="../index.html">
+                        Относительная на страницу в каталоге выше
+                    </a>
+                </li>
+
+                <!-- 12 -->
+                <li>
+                    <a href="../../index.html">
+                        Относительная на страницу в каталоге двумя уровнями выше
+                    </a>
+                </li>
+
+                <!-- 13 -->
+                <li>
+                    Это просто текст, а вот
+                    <a href="#form">
+                        контекстная ссылка внутри текста
+                    </a>.
+                </li>
+
+                <!-- 14 -->
+                <li>
+                    <a href="https://kubsu.ru#rectorate">
+                        Ссылка на фрагмент стороннего сайта
+                    </a>
+                </li>
+
+                <!-- 15. Карта-картинка -->
+                <li>
+                    Карта-картинка:
+                    <br>
+
+                    <img src="https://spbalum.ru/images/logo_yandexmaps.png"
+                         alt="Карта"
+                         width="250"
+                         usemap="#map">
+
+                    <map name="map">
+                        <area shape="rect"
+                              coords="0,0,125,100"
+                              href="https://yandex.ru/maps/"
+                              alt="Яндекс Карты">
+                    </map>
+                </li>
+
+                <!-- 16 -->
+                <li>
+                    <a href="">
+                        Ссылка с пустым href
+                    </a>
+                </li>
+
+                <!-- 17 -->
+                <li>
+                    <a href="javascript:void(0)">
+                        Ссылка без href
+                    </a>
+                </li>
+
+                <!-- 18 -->
+                <li>
+                    <a href="https://kubsu.ru" rel="nofollow">
+                        Ссылка с rel="nofollow"
+                    </a>
+                </li>
+
+                <!-- 19 -->
+                <li>
+                    <a href="https://kubsu.ru" rel="noindex">
+                        Ссылка с rel="noindex"
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Нумерованный список -->
+            <h3>Нумерованный список ссылок:</h3>
+
+            <ol>
+
+                <li>
+                    <a href="#links">
+                        Первая ссылка
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#table">
+                        Вторая ссылка
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#form">
+                        Третья ссылка
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ftp://example.com/file.zip">
+                        Ссылка на файл на FTP
+                    </a>
+                </li>
+
+            </ol>
+
+
+            <!-- Фрагмент страницы -->
+            <p id="home">
+                <strong>
+                    Это тот самый фрагмент, на который вела ссылка в пункте 6
+                </strong>
+            </p>
+
+        </section>
+
+
+
+        <!-- ТАБЛИЦА -->
+        <section class="card" id="table">
+
+            <h2>Таблица</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>№</th>
+                        <th>Наименование</th>
+                        <th>Категория</th>
+                        <th>Количество</th>
+                        <th>Цена (руб.)</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Ноутбук Lenovo</td>
+                        <td>Электроника</td>
+                        <td>15</td>
+                        <td>65 000</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Монитор Dell 27"</td>
+                        <td>Электроника</td>
+                        <td>20</td>
+                        <td>18 500</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Механическая клавиатура</td>
+                        <td rowspan="2">Периферия</td>
+                        <td>45</td>
+                        <td>3 200</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Оптическая мышь</td>
+                        <td>50</td>
+                        <td>1 500</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Лазерный принтер</td>
+                        <td>Офис</td>
+                        <td>8</td>
+                        <td>24 000</td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="3">
+                            Итого закупка:
+                        </th>
+
+                        <th>
+                            138
+                        </th>
+
+                        <th>
+                            112 200
+                        </th>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+
+        <!-- ФОРМА -->
+        <section class="card" id="form">
+
+            <h2>Форма</h2>
+
+            <form>
+
+                <label for="fio">
+                    ФИО:
+                </label>
+
+                <input type="text"
+                       id="fio"
+                       name="fio"
+                       placeholder="Введите ФИО">
+
+
+                <label for="phone">
+                    Телефон:
+                </label>
+
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       placeholder="+7 (999) 000-00-00">
+
+
+                <label for="email">
+                    E-mail:
+                </label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="example@domain.com">
+
+
+                <label for="date">
+                    Дата рождения:
+                </label>
+
+                <input type="date"
+                       id="date"
+                       name="date">
+
+
+                <label>
+                    Пол:
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="gender"
+                           value="male">
+                    Мужской
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="gender"
+                           value="female">
+                    Женский
+                </label>
+
+
+                <label for="language">
+                    Любимый язык программирования:
+                </label>
+
+                <select id="language"
+                        name="language">
+
+                    <option value="pascal">
+                        Pascal
+                    </option>
+
+                    <option value="c">
+                        C
+                    </option>
+
+                    <option value="cpp">
+                        C++
+                    </option>
+
+                    <option value="javascript">
+                        JavaScript
+                    </option>
+
+                    <option value="php">
+                        PHP
+                    </option>
+
+                    <option value="python">
+                        Python
+                    </option>
+
+                </select>
+
+
+                <label for="bio">
+                    Биография:
+                </label>
+
+                <textarea id="bio"
+                          name="bio"
+                          placeholder="Расскажите о себе"></textarea>
+
+
+                <label>
+                    <input type="checkbox"
+                           name="contract">
+
+                    С контрактом ознакомлен
+                </label>
+
+
+                <button type="submit">
+                    Сохранить
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ПОДВАЛ -->
+    <footer>
+
+        <div class="container footer-inner">
+
+            <span>
+                © 2026 Страница КубГУ
+            </span>
+
+            <span>
+                Статический учебный сайт
+            </span>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
