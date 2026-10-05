@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Страница КубГУ</title>
+
+    <link rel="stylesheet" href="StyleSheet3.css">
+</head>
+
+<body>
+
+    <!-- ШАПКА -->
+    <header>
+        <div class="container header-inner">
+
+            <div class="logo">
+                <img src="https://gelendzhik.academica.ru/images/colleges/539/1690978231_64ca47b73389b.webp"
+                     alt="Логотип КубГУ">
+            </div>
+
+            <div class="site-title">
+                <h1>Страница КубГУ</h1>
+                <p>Кубанский государственный университет</p>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- МЕНЮ -->
+    <nav>
+        <div class="container menu">
+
+            <a href="#table">Таблица</a>
+            <a href="#links">Ссылки</a>
+            <a href="#form">Форма</a>
+
+        </div>
+    </nav>
+
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="container">
+
+        <div class="content">
+
+
+            <!-- СПИСОК ССЫЛОК -->
+            <!-- В HTML он находится ПЕРЕД таблицей -->
+            <section class="card links" id="links">
+
+                <h2>Список гиперссылок</h2>
+
+                <ul>
+
+                    <li>
+                        <a href="https://kubsu.ru">
+                            Абсолютная на главную kubsu.ru
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://kubsu.ru" target="_blank">
+                            Абсолютная на главную в протоколе https
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://kubsu.ru">
+                            Сокращённая на главную
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#form">
+                            Ссылка на фрагмент текущей страницы
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://kubsu.ru?param=123">
+                            Ссылка с параметрами в URL
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://kubsu.ru?id=10">
+                            Ссылка с параметром id в URL
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            Относительная ссылка на страницу
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../about.html">
+                            Относительная ссылка на страницу уровнем выше
+                        </a>
+                    </li>
+
+                    <li>
+                        Это просто текст, а вот
+                        <a href="https://kubsu.ru">
+                            контекстная ссылка внутри текста
+                        </a>.
+                    </li>
+
+                    <li>
+                        <a href="https://kubsu.ru">
+                            Ссылка на фрагмент стороннего сайта
+                        </a>
+                    </li>
+
+                    <li>
+                        Карта-картинка:
+                        <br>
+
+                        <a href="https://yandex.ru/maps">
+                            <img class="map-image"
+                                 src="https://spbalum.ru/images/logo_yandexmaps.png"
+                                 alt="Карта">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Ссылка с пустым href
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Ссылка без href
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#form" title="Перейти к форме">
+                            Ссылка с title
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- ТАБЛИЦА -->
+            <section class="card table-section" id="table">
+
+                <h2>Таблица</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Наименование</th>
+                            <th>Категория</th>
+                            <th>Количество</th>
+                            <th>Цена (руб.)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Ноутбук Lenovo</td>
+                            <td>Электроника</td>
+                            <td>15</td>
+                            <td>65 000</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Монитор Dell 27"</td>
+                            <td>Электроника</td>
+                            <td>20</td>
+                            <td>18 500</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Механическая клавиатура</td>
+                            <td rowspan="2">Периферия</td>
+                            <td>45</td>
+                            <td>3 200</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Оптическая мышь</td>
+                            <td>50</td>
+                            <td>1 500</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Лазерный принтер</td>
+                            <td>Офис</td>
+                            <td>8</td>
+                            <td>24 000</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <strong>Итого закупка:</strong>
+                            </td>
+                            <td>138</td>
+                            <td>112 200</td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </section>
+
+
+            <!-- ФОРМА -->
+            <section class="card form-section" id="form">
+
+                <h2>Форма</h2>
+
+                <form>
+
+                    <label for="fio">ФИО:</label>
+                    <input type="text"
+                           id="fio"
+                           name="fio"
+                           placeholder="Введите ФИО">
+
+                    <label for="phone">Телефон:</label>
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           placeholder="+7 (999) 000-00-00">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="example@domain.com">
+
+                    <label for="date">Дата рождения:</label>
+                    <input type="date"
+                           id="date"
+                           name="date">
+
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message"
+                              name="message"
+                              placeholder="Введите сообщение"></textarea>
+
+                    <button type="submit">
+                        Отправить
+                    </button>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ПОДВАЛ -->
+    <footer>
+
+        <div class="container footer-inner">
+
+            <span>© КубГУ</span>
+            <span>Страница Кубанского государственного университета</span>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
