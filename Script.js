@@ -46,16 +46,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const count = Number(quantity.value);
 
         if (!Number.isInteger(count) || count < 1) {
-            result.textContent = "Ââåäèòå êîëè÷åñòâî íå ìåíüøå 1.";
+            result.textContent = "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã­Ã¥ Ã¬Ã¥Ã­Ã¼Ã¸Ã¥ 1.";
             return;
         }
 
         const total = price * count;
 
         result.textContent =
-            "Ñòîèìîñòü óñëóãè: " +
+            "Ã‘Ã²Ã®Ã¨Ã¬Ã®Ã±Ã²Ã¼ Ã³Ã±Ã«Ã³Ã£Ã¨: " +
             total.toLocaleString("ru-RU") +
-            " ðóá.";
+            " Ã°Ã³Ã¡.";
     }
 
     types.forEach(function (type) {
