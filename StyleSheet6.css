@@ -1,0 +1,107 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f3f6;
+    color: #182230;
+}
+
+header {
+    background-color: #7298c5;
+    border-bottom: 1px solid #557da9;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+    .logo img {
+        display: block;
+        max-width: 100%;
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+
+nav {
+    background-color: #7298c5;
+    border-bottom: 1px solid #557da9;
+}
+
+    nav a {
+        color: #182230;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+.card-section {
+    width: 100%;
+    background-color: #7298c5;
+    border: 1px solid #557da9;
+    border-radius: 4px;
+}
+
+    .card-section ul {
+        padding-left: 20px;
+    }
+
+    .card-section li a {
+        color: blue;
+    }
+
+.map-image {
+    display: inline-block;
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.table {
+    background-color: white;
+}
+
+    .table th,
+    .table td {
+        vertical-align: middle;
+    }
+
+footer {
+    background-color: #7298c5;
+    border-top: 1px solid #557da9;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+}
