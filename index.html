@@ -3,287 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Страница КубГУ</title>
-
-    <link rel="stylesheet" href="StyleSheet3.css">
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- ШАПКА -->
-    <header>
-        <div class="container header-inner">
-
-            <div class="logo">
-                <img src="https://gelendzhik.academica.ru/images/colleges/539/1690978231_64ca47b73389b.webp"
-                     alt="Логотип КубГУ">
+<div class="topbar">
+    <div class=" topbar-content">
+        <header id="header">
+            <div class="header-content">
+                <div class="logo-block">
+                    <img src="image1.jpeg" alt="Логотип" class="logo-img">
+                    <span>Задание 3</span>
+                </div>
             </div>
-
-            <div class="site-title">
-                <h1>Страница КубГУ</h1>
-                <p>Кубанский государственный университет</p>
-            </div>
-
-        </div>
-    </header>
-
-
-    <!-- МЕНЮ -->
-    <nav>
-        <div class="container menu">
-
-            <a href="#table">Таблица</a>
-            <a href="#links">Ссылки</a>
-            <a href="#form">Форма</a>
-
-        </div>
-    </nav>
-
-
-    <!-- ОСНОВНОЙ КОНТЕНТ -->
-    <main class="container">
-
-        <div class="content">
-
-
-            <!-- СПИСОК ССЫЛОК -->
-            <!-- В HTML он находится ПЕРЕД таблицей -->
-            <section class="card links" id="links">
-
-                <h2>Список гиперссылок</h2>
-
-                <ul>
-
-                    <li>
-                        <a href="https://kubsu.ru">
-                            Абсолютная на главную kubsu.ru
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://kubsu.ru" target="_blank">
-                            Абсолютная на главную в протоколе https
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://kubsu.ru">
-                            Сокращённая на главную
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#form">
-                            Ссылка на фрагмент текущей страницы
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://kubsu.ru?param=123">
-                            Ссылка с параметрами в URL
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://kubsu.ru?id=10">
-                            Ссылка с параметром id в URL
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="about.html">
-                            Относительная ссылка на страницу
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="../about.html">
-                            Относительная ссылка на страницу уровнем выше
-                        </a>
-                    </li>
-
-                    <li>
-                        Это просто текст, а вот
-                        <a href="https://kubsu.ru">
-                            контекстная ссылка внутри текста
-                        </a>.
-                    </li>
-
-                    <li>
-                        <a href="https://kubsu.ru">
-                            Ссылка на фрагмент стороннего сайта
-                        </a>
-                    </li>
-
-                    <li>
-                        Карта-картинка:
-                        <br>
-
-                        <a href="https://yandex.ru/maps">
-                            <img class="map-image"
-                                 src="https://spbalum.ru/images/logo_yandexmaps.png"
-                                 alt="Карта">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Ссылка с пустым href
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Ссылка без href
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#form" title="Перейти к форме">
-                            Ссылка с title
-                        </a>
-                    </li>
-
-                </ul>
-
-            </section>
-
-
-            <!-- ТАБЛИЦА -->
-            <section class="card table-section" id="table">
-
-                <h2>Таблица</h2>
-
-                <table>
-
-                    <thead>
-                        <tr>
-                            <th>№</th>
-                            <th>Наименование</th>
-                            <th>Категория</th>
-                            <th>Количество</th>
-                            <th>Цена (руб.)</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                            <td>1</td>
-                            <td>Ноутбук Lenovo</td>
-                            <td>Электроника</td>
-                            <td>15</td>
-                            <td>65 000</td>
-                        </tr>
-
-                        <tr>
-                            <td>2</td>
-                            <td>Монитор Dell 27"</td>
-                            <td>Электроника</td>
-                            <td>20</td>
-                            <td>18 500</td>
-                        </tr>
-
-                        <tr>
-                            <td>3</td>
-                            <td>Механическая клавиатура</td>
-                            <td rowspan="2">Периферия</td>
-                            <td>45</td>
-                            <td>3 200</td>
-                        </tr>
-
-                        <tr>
-                            <td>4</td>
-                            <td>Оптическая мышь</td>
-                            <td>50</td>
-                            <td>1 500</td>
-                        </tr>
-
-                        <tr>
-                            <td>5</td>
-                            <td>Лазерный принтер</td>
-                            <td>Офис</td>
-                            <td>8</td>
-                            <td>24 000</td>
-                        </tr>
-
-                    </tbody>
-
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">
-                                <strong>Итого закупка:</strong>
-                            </td>
-                            <td>138</td>
-                            <td>112 200</td>
-                        </tr>
-                    </tfoot>
-
-                </table>
-
-            </section>
-
-
-            <!-- ФОРМА -->
-            <section class="card form-section" id="form">
-
-                <h2>Форма</h2>
-
-                <form>
-
-                    <label for="fio">ФИО:</label>
-                    <input type="text"
-                           id="fio"
-                           name="fio"
-                           placeholder="Введите ФИО">
-
-                    <label for="phone">Телефон:</label>
-                    <input type="tel"
-                           id="phone"
-                           name="phone"
-                           placeholder="+7 (999) 000-00-00">
-
-                    <label for="email">E-mail:</label>
-                    <input type="email"
-                           id="email"
-                           name="email"
-                           placeholder="example@domain.com">
-
-                    <label for="date">Дата рождения:</label>
-                    <input type="date"
-                           id="date"
-                           name="date">
-
-                    <label for="message">Сообщение:</label>
-                    <textarea id="message"
-                              name="message"
-                              placeholder="Введите сообщение"></textarea>
-
-                    <button type="submit">
-                        Отправить
-                    </button>
-
-                </form>
-
-            </section>
-
-        </div>
-
-    </main>
-
-
-    <!-- ПОДВАЛ -->
-    <footer>
-
-        <div class="container footer-inner">
-
-            <span>© КубГУ</span>
-            <span>Страница Кубанского государственного университета</span>
-
-        </div>
-
-    </footer>
-
+        </header>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="#links">Ссылки</a></li>
+                <li><a href="#table">Таблица</a></li>
+                <li><a href="#form">Формы</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<main class="container main-content">
+    <section id="links" class="block">
+        <h2>
+            Список гиперссылок
+        </h2>
+        <ul>
+            <li><a href="http://kubsu.ru/">1 Гиперссылка на сайт kubsu.ru</a></li>
+            <li><a href="https://www.kubsu.ru/">2 Гиперссылка на сайт kubsu.ru в протоколе https</a></li>
+            <li id="whw">
+                <a href="http://kubsu.ru">
+                    3 <img src="image.jpg" alt="цветок" width="400" height="400">
+                </a>
+            </li>
+            <li><a href="second.html">4 Сокращённая ссылка на внутреннюю страницу</a></li>
+            <li><a href="index.html">5 Сокращенная ссылка на главную страницу</a></li>
+            <li><a href="#whw">6 Ссылка на картинку на текущей странице</a></li>
+            <li><a href="https://www.dns-shop.ru/search/?q=powerbank&amp;category=17a8b19d16404e77&amp;fr%5B3he%5D=20000-29999">7 Ссылка с тремя параметрами</a></li>
+            <li><a href="https://www.kubsu.ru/it/?id=rec2439454101">8 Ссылка с параметром id</a> </li>
+            <li><a href="./second.html">9 Относительная ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="about/page.html">10 Относительная ссылка на страницу в каталоге about</a></li>
+            <li><a href="../index.html">11 Относительная ссылка на страницу в каталоге выше уровнем </a></li>
+            <li><a href="../../index.html">12 Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+            <li>13. Доступен <a href="https://kubsu.ru"> Сайт КубГУ </a></li>
+            <li><a href="https://www.kubsu.ru/it/#rec2439454101">14 Ссылка на фрагмент сайта</a> </li>
+            <li>
+                <p style="font-size: 20px;">НАЖИМАТЬ НА КРУГ ИЛИ ПРЯМОУГОЛЬНИК</p>
+                <div class="map-wrapper">
+                <img src="map.png" alt="Карта" usemap="#map">
+                <map name="map">
+                    <area shape="rect" coords="74,177,226,263" href="https://www.kubsu.ru/" alt="Прямоугольник">
+                    <area shape="circle" coords="397,230,60" href="./second.html" alt="Круг">
+                </map>
+                </div>
+            </li>
+            <li><a href="">16 Ссылка с пустым href</a></li>
+            <li><a>17 Ссылка без href</a></li>
+            <li><a href="https://kubsu.ru" rel="nofollow">18 Ссылка, по которой запрещен переход поисковикам</a></li>
+            <li><a href="https://kubsu.ru" rel="noindex nofollow">19 Ссылка, запрещенная для индексации</a></li>
+            <li>20
+                <ol>
+                    <li><a href="https://www.kubsu.ru">Сайт КубГУ</a></li>
+                    <li><a href="https://dns-shop.ru">Сайт электротоваров</a></li>
+                </ol>
+            </li>
+            <li><a href="ftp://login:password@server/file.pdf">21 Ссылка на FTP с авторизацией</a></li>
+        </ul>
+    </section>
+
+    <section id="table" class="block">
+        <h2>Таблица</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="2">5</td>
+                <td>6</td>
+                <td rowspan="2">7</td>
+            </tr>
+            <tr>
+                <td colspan="3">8</td>
+            </tr>
+            <tr>
+                <td colspan="4">10</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="form" class="block">
+        <h2>Форма</h2>
+        <form action="#" method="get">
+            <label>
+                ФИО: <br>
+                <input type="text" name="field-name" placeholder="Введите ФИО" pattern="[А-Яа-яЁё\s-]+" title="Введите только буквы, пробелы и дефис" required>
+            </label><br><br>
+            <label>
+                Телефон: <br>
+                <input type="tel" name="field-tel" placeholder="Введите номер телефона" pattern="[0-9\s+()-]+" title="Введите только цифры, пробелы, +, - и скобки" required>
+            </label><br><br>
+            <label>
+                E-mail: <br>
+                <input type="email" name="field-email" placeholder="Введите почту">
+            </label><br><br>
+            <label>
+                Дата рождения:<br>
+                <input type="date" name="field-date">
+            </label><br><br>
+            Пол:
+            <label>
+                <input type="radio" name="field-gender" value="male"> Мужской
+            </label>
+            <label>
+                <input type="radio" name="field-gender" value="female"> Женский
+            </label><br><br>
+            <label>
+                Любимый язык программирования:<br>
+                <select name="field-proglang[]" multiple="multiple">
+                    <option value="pascal">Pascal</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="haskel">Haskel</option>
+                    <option value="clojure">Clojure</option>
+                    <option value="prolog">Prolog</option>
+                    <option value="scala">Scala</option>
+                </select>
+            </label><br><br>
+            <label>
+                Биография:<br>
+                <textarea name="field-bio"></textarea>
+            </label><br><br>
+            <label>
+                <input type="checkbox" name="field-contract" value="yes">С контрактом ознакомлен(а)
+            </label><br><br>
+            <input type="submit" value="Сохранить">
+        </form>
+    </section>
+
+</main>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>(с) Руслан Хорьков</p>
+    </div>
+</footer>
 </body>
 </html>
