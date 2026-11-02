@@ -1,213 +1,262 @@
-﻿body {
-    /*font-family: "Courier New", monotype, serif;*/
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    line-height: 120%;
-    /*color: #222;*/
+﻿
+/* Общие настройки */
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.map-wrapper{
-    width: 100%;
-    overflow-x: auto;
-}
-
-.map-wrapper img {
-    max-width: none;
-    height: auto;
-}
-
-ul li {
-    margin-bottom: 2px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000;
     line-height: 1.5;
-}
-
-.topbar {background-color: transparent}
-
-header {
-    width: 100%;
-    background-color: #729bca;
-    box-sizing: border-box;
-}
-
-nav {
-    width: 100%;
-    background-color: #c9dce6;
-    box-sizing: border-box;
-}
-/*header, nav, main, footer {*/
-/*    width: 100%;*/
-/*}*/
-
-header, footer {
-    background-color: #729bca;
-}
-
-footer{
-    padding: 10px;
-}
-
-.container {
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.header-content {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
 }
 
-.logo-block {
+a {
+    color: #0000ee;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Шапка */
+
+#main-header {
+    width: 100%;
+    background-color: #8ab4e8;
+    padding: 10px 0;
+}
+
+.header-inner {
+    width: 100%;
+    padding: 0 20px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: space-between;
 }
 
-.logo-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #000;
+.logo img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
-.block,
-section {
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #c9e1fd;
+.site-name {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.main-content {
+/* Навигация */
+
+#main-nav {
+    width: 100%;
+    background-color: #8ab4e8;
+    padding: 10px 20px;
+    margin-top: 5px;
+}
+
+#main-nav ul {
+    list-style: none;
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
-#table {order: 1;}
-#links {order: 2;}
-#form  {order: 3;}
+#main-nav a {
+    color: #0000ee;
+}
 
-table {
+/* Основное содержимое */
+
+#content {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-block {
+    width: 100%;
+    background-color: #8ab4e8;
+    padding: 15px;
+}
+
+.section-block h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.section-block ul,
+.section-block ol {
+    margin-left: 20px;
+}
+
+.section-block li {
+    margin-bottom: 4px;
+}
+
+.section-block > ul > li > img {
+    vertical-align: middle;
+}
+
+/* Карта */
+
+.map-label {
+    margin-bottom: 6px;
+}
+
+.map-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Порядок блоков на смартфонах */
+
+#table {
+    order: 1;
+}
+
+#links {
+    order: 2;
+}
+
+#form {
+    order: 3;
+}
+
+/* Таблица */
+
+#data-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
-table, th, td {
+#data-table th,
+#data-table td {
     border: 1px solid #000;
-}
-
-th, td {
-    padding: 8px;
+    padding: 8px 10px;
     text-align: center;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #ea7474;
+#data-table thead th {
+    background-color: #cccccc;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #729856;
+#data-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
+#data-table tbody tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
 
-    .topbar{
-        background-color: #729bca;
-        /*padding: 0 185px;*/
-    }
+/* Форма */
 
-    .topbar-content {
-        width: 100%;
-        padding: 5px;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-sizing: border-box;
-    }
+#form form {
+    background-color: #ffffff;
+    padding: 10px;
+}
 
-    header {
-        width: auto;
-        background-color: transparent;
-    }
-    .container {
+#form label {
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+#form input[type="text"],
+#form input[type="tel"],
+#form input[type="email"],
+#form input[type="date"],
+#form select,
+#form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 4px 6px;
+    margin-top: 4px;
+    border: 1px solid #666;
+    font-family: inherit;
+}
+
+#form textarea {
+    min-height: 80px;
+}
+
+#form input[type="submit"] {
+    margin-top: 10px;
+    padding: 6px 16px;
+    cursor: pointer;
+}
+
+/* Подвал */
+
+#main-footer {
+    flex-shrink: 0;
+    width: 100%;
+    background-color: #8ab4e8;
+    padding: 12px 0;
+}
+
+#main-footer p {
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Планшеты и компьютеры */
+
+@media (min-width: 768px) {
+
+    /* Шапка */
+
+    .header-inner {
         max-width: 960px;
         margin: 0 auto;
-        width: 100%;
     }
 
-    nav {
-        width: auto;
-        background-color: transparent;
-    }
+    /* Горизонтальное меню */
 
-    .header-content {
-        display: flex;
+    #main-nav ul {
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+        justify-content: flex-end;
+        gap: 20px;
+        max-width: 960px;
+        margin: 0 auto;
     }
 
-    nav ul {
-        flex-direction: row;
-        gap: 55px;
+    /* Порядок блоков на компьютере */
+
+    #links {
+        order: 1;
     }
 
-    #links {order: 1;}
-    #table {order: 2;}
-    #form  {order: 3;}
-}
-
-@media screen and (max-width: 767px) {
-    .topbar {
-        background-color: transparent;
+    #table {
+        order: 2;
     }
 
-    .topbar header {
-        background-color: #729bca;
+    #form {
+        order: 3;
     }
 
-    .topbar nav {
-        background-color: #c9e1fd;
-        margin-top: 10px;
-        padding: 15px;
-        border-radius: 15px;
-    }
+    /* Подвал */
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .logo-img {
-        width: 70px;
-        height: 70px;
-        margin: 5px;
+    #main-footer p {
+        max-width: 960px;
+        margin: 0 auto;
     }
 }
