@@ -16,7 +16,7 @@
           <img src="image.png" alt="Логотип" class="rounded-circle" width="60" height="60">
           <span class="fs-5 fw-bold">Название сайта</span>
         </div>
-        <nav>
+        <nav aria-label="Главная навигация">
           <ul class="nav flex-column flex-md-row gap-1">
             <li class="nav-item"><a class="nav-link p-1" href="#links">Ссылка меню 1</a></li>
             <li class="nav-item"><a class="nav-link p-1" href="#table">Ссылка 2</a></li>
@@ -77,7 +77,12 @@
           <div class="table-responsive">
             <table class="table table-bordered table-striped mb-0">
               <thead>
-                <tr><th>Имя</th><th>Телефон</th><th>Почта</th><th>Оценка</th></tr>
+                <tr>
+  <th scope="col">Имя</th>
+  <th scope="col">Телефон</th>
+  <th scope="col">Почта</th>
+  <th scope="col">Оценка</th>
+</tr>
               </thead>
               <tbody>
                 <tr><td rowspan="2">имя</td><td>телефон</td><td>почта</td><td>оценка</td></tr>
