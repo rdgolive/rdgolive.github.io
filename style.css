@@ -1,4 +1,40 @@
-﻿body {
+body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: #212529;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header,
+footer {
+  width: 100%;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration-thickness: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
 }
