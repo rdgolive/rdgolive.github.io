@@ -13,28 +13,3 @@ body {
 *::after {
   box-sizing: inherit;
 }
-
-header,
-footer {
-  width: 100%;
-  display: block;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration-thickness: auto;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-input,
-textarea,
-select,
-button {
-  font-family: inherit;
-}
